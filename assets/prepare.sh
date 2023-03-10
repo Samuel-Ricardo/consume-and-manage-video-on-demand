@@ -7,4 +7,4 @@ ffmpeg \
   -maxrate 1500k                                       \  #max bitrate
   -bufsize 1000k                                       \  #buffer size
   -f mp4                                               \  #output format
-  video.mp4                                            \  #output file
+  video-ready.mp4                                      \  #output file
