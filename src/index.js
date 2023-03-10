@@ -1,3 +1,4 @@
+import { createReadStream } from 'node:fs'
 import { createServer, request } from 'node:http'
 
 createServer(async (request, response) => {
@@ -12,6 +13,8 @@ createServer(async (request, response) => {
     response.end()
     return;
   }
+
+  createReadStream('./assets/video.mp4').pipe(response)
 
   response.end("Hello World")
 })
