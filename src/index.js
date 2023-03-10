@@ -38,6 +38,13 @@ createServer(async (request, response) => {
 
   ffmpeg_process.stderr.on('data', msg => console.log(msg.toString()))
   ffmpeg_process.stdout.pipe(response)
+
+  request.once('close', () => {
+    ffmpeg_process.stdout.destroy()
+    ffmpeg_process.stdin.destroy()
+    
+    console.log("Disconnected! x(", ffmpeg_process.kill())
+  })
 })
 
 .listen(3000, () => console.log("Server Running at 3000"))
