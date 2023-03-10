@@ -1,0 +1,20 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuel-Ricardo/consume-and-manage-video-on-demand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Samuel-Ricardo/consume-and-manage-video-on-demand/issues"
+  },
+  "homepage": "https://github.com/Samuel-Ricardo/consume-and-manage-video-on-demand#readme",
+  "description": ""
+}
