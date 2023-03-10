@@ -18,5 +18,8 @@
     "url": "https://github.com/Samuel-Ricardo/consume-and-manage-video-on-demand/issues"
   },
   "homepage": "https://github.com/Samuel-Ricardo/consume-and-manage-video-on-demand#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
 }
