@@ -29,6 +29,7 @@ createServer(async (request, response) => {
       '-maxrate', '1500k',
       '-bufsize', '1000k',
       '-f', 'mp4',
+      '-vf', "monochrome,drawtext=text='samuelricardoofficial@gmail.com':x=10:y=H-th-10:fontsize=50:fontcolor=yellow:shadowcolor=black:shadowx=5:shadowy=5",
       'pipe:1'
     ], { stdio: ['pipe', 'pipe', 'pipe'] }
   )
